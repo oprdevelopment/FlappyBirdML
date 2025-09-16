@@ -48,14 +48,14 @@ public class GenerateScenario : MonoBehaviour
             //if game is started, start spawning pipes at random positions
             if (isGameStarted)
             {
-                float positionToInstantiatePipes = 0;
+                float positionToInstantiatePipes = 4;
                 for (int i = 0; i < 22; i++)
                 {
                     float yPos = Random.Range(-1.34f, 1.03f);
                     GameObject pipe = Instantiate(pipes, new Vector3((positionToInstantiatePipes + positionToSpawnBackgroundBeforeLoopStarts), yPos), Quaternion.identity);
                     pipeList.Add(pipe);
                     print("added to pipe list");
-                    positionToInstantiatePipes += 2;
+                    positionToInstantiatePipes += 8;
                 }
             }
             CleanUsedBackgrounds();
