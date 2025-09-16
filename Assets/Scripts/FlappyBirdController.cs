@@ -47,7 +47,7 @@ public class FlappyBirdController : MonoBehaviour {
     void Flap()
     {
         transform.rotation = Quaternion.Lerp(Quaternion.Euler(transform.rotation.eulerAngles), forwardPosition, 7f);
-        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        GetComponent<Rigidbody2D>().linearVelocity = Vector3.zero;
         GetComponent<Rigidbody2D>().AddForce(Vector2.up * 150, ForceMode2D.Force);
     }
 
