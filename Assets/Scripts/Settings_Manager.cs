@@ -7,12 +7,13 @@ public class Settings_Manager : MonoBehaviour
 {
     public GameObject startScreenCanvas;
 
+    public FlappyBirdTextureManager textureManager; 
+    public Sprite[] availableSprites;
+    
     public void TurnOnSettingMenu()
     {
         startScreenCanvas.SetActive(false);
         gameObject.SetActive(true);
-
-        Game_Manager.instance.Pause();
     }
 
     public void SoundOn()
@@ -24,4 +25,13 @@ public class Settings_Manager : MonoBehaviour
     {
         AudioListener.volume = 0;
     }
+
+    public void ChangeTexture(int index)
+    {
+        if (index >= 0 && index < availableSprites.Length)
+        {
+            textureManager.ChangeSprite(index);
+        }
+    }
 }
+

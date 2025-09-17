@@ -53,6 +53,7 @@
     <Compile Include="Assets\Scripts\Game_Manager.cs" />
     <Compile Include="Assets\Scripts\FlappyBirdController.cs" />
     <Compile Include="Assets\Scripts\PlayAudioOnTriggerEnter.cs" />
+    <Compile Include="Assets\Scripts\FlappyBirdTextureManager.cs" />
     <None Include="Assets\Resources\BillingMode.json" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
