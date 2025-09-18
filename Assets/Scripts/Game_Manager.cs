@@ -49,7 +49,7 @@ public class Game_Manager : MonoBehaviour
         DeadCanvas.SetActive(false);
         InGameCanvas.SetActive(false);
         StartScreenCanvas.SetActive(true);
-
+        currentScore = 0;
         flappyBird.transform.parent.position = new Vector3(0, -0.22f, -10);
     }
 
